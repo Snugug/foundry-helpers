@@ -26,8 +26,8 @@ const actors = await Promise.all(
   results.map(async (r) => ({
     roll: {
       total: r.roll.total,
-      dice: r.terms[0].result[0].result,
-      options: r.terms[0].options,
+      dice: r.roll.terms[0].results.find((r) => r.active)?.result,
+      options: r.roll.terms[0].options,
     },
     token: await fromUuid(r.uuid),
   })),
