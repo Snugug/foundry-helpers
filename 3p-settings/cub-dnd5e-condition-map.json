@@ -1,0 +1,1068 @@
+{
+  "system": "dnd5e",
+  "map": [
+    {
+      "id": "b0cxxu5kkuq8m3sb",
+      "name": "Blinded",
+      "icon": "modules/combat-utility-belt/icons/blinded.svg",
+      "referenceId": "@Compendium[dnd5e.rules.995mfaI3z7WtY7vK]",
+      "applyTrigger": "",
+      "removeTrigger": "",
+      "activeEffect": {
+        "label": "Blinded",
+        "icon": "modules/combat-utility-belt/icons/blinded.svg",
+        "tint": "",
+        "disabled": false,
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "flags": {
+          "ActiveAuras": {
+            "isAura": false,
+            "aura": "None",
+            "radius": null,
+            "alignment": "",
+            "type": "",
+            "ignoreSelf": false,
+            "height": false,
+            "hidden": false,
+            "displayTemp": false,
+            "hostile": false,
+            "onlyOnce": false
+          },
+          "combat-utility-belt": {
+            "conditionId": "b0cxxu5kkuq8m3sb"
+          }
+        },
+        "changes": [
+          {
+            "key": "flags.midi-qol.disadvantage.attack.all",
+            "mode": 5,
+            "value": "1"
+          },
+          {
+            "key": "flags.midi-qol.grants.advantage.attack.all",
+            "mode": 2,
+            "value": "1"
+          }
+        ]
+      },
+      "options": {
+        "overlay": false,
+        "removeOthers": false,
+        "outputChat": true,
+        "markDefeated": false
+      },
+      "isNew": false,
+      "enrichedReference": "<a class=\"entity-link content-link\" draggable=\"true\" data-pack=\"dnd5e.rules\" data-id=\"995mfaI3z7WtY7vK\"><i class=\"fas fa-book-open\"></i> Blinded</a>",
+      "isChanged": false
+    },
+    {
+      "id": "eq6r7mqrs8wxp3ds",
+      "name": "Charmed",
+      "icon": "modules/combat-utility-belt/icons/charmed.svg",
+      "referenceId": "@Compendium[dnd5e.rules.H8aTFVG3YFAkQ3TK]",
+      "applyTrigger": "",
+      "removeTrigger": "",
+      "options": {
+        "overlay": false,
+        "removeOthers": false,
+        "outputChat": true,
+        "markDefeated": false
+      },
+      "isNew": false,
+      "enrichedReference": "<a class=\"entity-link content-link\" draggable=\"true\" data-pack=\"dnd5e.rules\" data-id=\"H8aTFVG3YFAkQ3TK\"><i class=\"fas fa-book-open\"></i> Charmed</a>",
+      "isChanged": false
+    },
+    {
+      "id": "n0vdbyc2kykw945q",
+      "name": "Concentrating",
+      "icon": "modules/combat-utility-belt/icons/concentrating.svg",
+      "referenceId": "@Compendium[combat-utility-belt.conditionsdnd5e.nSoKejZfahbxfggp]",
+      "applyTrigger": "",
+      "removeTrigger": "",
+      "options": {
+        "overlay": false,
+        "removeOthers": false,
+        "outputChat": true,
+        "markDefeated": false
+      },
+      "isNew": false,
+      "enrichedReference": "<a class=\"entity-link content-link\" draggable=\"true\" data-pack=\"combat-utility-belt.conditionsdnd5e\" data-id=\"nSoKejZfahbxfggp\"><i class=\"fas fa-book-open\"></i> Concentrating</a>",
+      "isChanged": false
+    },
+    {
+      "id": "h3acg01cfqvffed5",
+      "name": "Deafened",
+      "icon": "modules/combat-utility-belt/icons/deafened.svg",
+      "referenceId": "@Compendium[dnd5e.rules.XnDPIa0MLWhGvuQg]",
+      "applyTrigger": "",
+      "removeTrigger": "",
+      "options": {
+        "overlay": false,
+        "removeOthers": false,
+        "outputChat": true,
+        "markDefeated": false
+      },
+      "isNew": false,
+      "enrichedReference": "<a class=\"entity-link content-link\" draggable=\"true\" data-pack=\"dnd5e.rules\" data-id=\"XnDPIa0MLWhGvuQg\"><i class=\"fas fa-book-open\"></i> Deafened</a>",
+      "isChanged": false
+    },
+    {
+      "id": "icxvu18yzbllaroa",
+      "name": "Exhaustion 1",
+      "icon": "modules/combat-utility-belt/icons/exhaustion1.svg",
+      "referenceId": "@Compendium[dnd5e.rules.apBZudO4UA1wj7aC]",
+      "applyTrigger": "",
+      "removeTrigger": "",
+      "activeEffect": {
+        "label": "Exhaustion 1",
+        "icon": "modules/combat-utility-belt/icons/exhaustion1.svg",
+        "tint": "",
+        "disabled": false,
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "flags": {
+          "ActiveAuras": {
+            "isAura": false,
+            "aura": "None",
+            "radius": null,
+            "alignment": "",
+            "type": "",
+            "ignoreSelf": false,
+            "height": false,
+            "hidden": false,
+            "displayTemp": false,
+            "hostile": false,
+            "onlyOnce": false
+          },
+          "combat-utility-belt": {
+            "conditionId": "icxvu18yzbllaroa"
+          }
+        },
+        "changes": [
+          {
+            "key": "flags.midi-qol.disadvantage.ability.check.all",
+            "mode": 5,
+            "value": "1"
+          }
+        ]
+      },
+      "options": {
+        "overlay": false,
+        "removeOthers": false,
+        "outputChat": true,
+        "markDefeated": false
+      },
+      "isNew": false,
+      "enrichedReference": "<a class=\"entity-link content-link\" draggable=\"true\" data-pack=\"dnd5e.rules\" data-id=\"apBZudO4UA1wj7aC\"><i class=\"fas fa-book-open\"></i> Exhaustion</a>",
+      "isChanged": false
+    },
+    {
+      "id": "xih3qh94lvi4izmb",
+      "name": "Exhaustion 2",
+      "icon": "modules/combat-utility-belt/icons/exhaustion2.svg",
+      "referenceId": "@Compendium[dnd5e.rules.apBZudO4UA1wj7aC]",
+      "applyTrigger": "",
+      "removeTrigger": "",
+      "activeEffect": {
+        "label": "Exhaustion 2",
+        "icon": "modules/combat-utility-belt/icons/exhaustion2.svg",
+        "tint": "",
+        "disabled": false,
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "flags": {
+          "ActiveAuras": {
+            "isAura": false,
+            "aura": "None",
+            "radius": null,
+            "alignment": "",
+            "type": "",
+            "ignoreSelf": false,
+            "height": false,
+            "hidden": false,
+            "displayTemp": false,
+            "hostile": false,
+            "onlyOnce": false
+          }
+        },
+        "changes": [
+          {
+            "key": "data.attributes.movement.walk",
+            "mode": 1,
+            "value": ".5"
+          },
+          {
+            "key": "data.attributes.movement.swim",
+            "mode": 1,
+            "value": ".5"
+          },
+          {
+            "key": "data.attributes.movement.fly",
+            "mode": 1,
+            "value": ".5"
+          },
+          {
+            "key": "data.attributes.movement.burrow",
+            "mode": 1,
+            "value": ".5"
+          },
+          {
+            "key": "data.attributes.movement.climb",
+            "mode": 1,
+            "value": ".5"
+          }
+        ]
+      },
+      "options": {
+        "overlay": false,
+        "removeOthers": false,
+        "outputChat": true,
+        "markDefeated": false
+      },
+      "isNew": false,
+      "enrichedReference": "<a class=\"entity-link content-link\" draggable=\"true\" data-pack=\"dnd5e.rules\" data-id=\"apBZudO4UA1wj7aC\"><i class=\"fas fa-book-open\"></i> Exhaustion</a>",
+      "isChanged": false
+    },
+    {
+      "id": "1hkso46jyh4sgzgm",
+      "name": "Exhaustion 3",
+      "icon": "modules/combat-utility-belt/icons/exhaustion3.svg",
+      "referenceId": "@Compendium[dnd5e.rules.apBZudO4UA1wj7aC]",
+      "applyTrigger": "",
+      "removeTrigger": "",
+      "activeEffect": {
+        "label": "Exhaustion 3",
+        "icon": "modules/combat-utility-belt/icons/exhaustion3.svg",
+        "tint": "",
+        "disabled": false,
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "flags": {
+          "ActiveAuras": {
+            "isAura": false,
+            "aura": "None",
+            "radius": null,
+            "alignment": "",
+            "type": "",
+            "ignoreSelf": false,
+            "height": false,
+            "hidden": false,
+            "displayTemp": false,
+            "hostile": false,
+            "onlyOnce": false
+          },
+          "combat-utility-belt": {
+            "conditionId": "1hkso46jyh4sgzgm"
+          }
+        },
+        "changes": [
+          {
+            "key": "flags.midi-qol.disadvantage.attack.all",
+            "mode": 5,
+            "value": "1"
+          },
+          {
+            "key": "flags.midi-qol.disadvantage.ability.save.al",
+            "mode": 5,
+            "value": "1"
+          }
+        ]
+      },
+      "options": {
+        "overlay": false,
+        "removeOthers": false,
+        "outputChat": true,
+        "markDefeated": false
+      },
+      "isNew": false,
+      "enrichedReference": "<a class=\"entity-link content-link\" draggable=\"true\" data-pack=\"dnd5e.rules\" data-id=\"apBZudO4UA1wj7aC\"><i class=\"fas fa-book-open\"></i> Exhaustion</a>",
+      "isChanged": false
+    },
+    {
+      "id": "x4sf62161jrqn9i3",
+      "name": "Exhaustion 4",
+      "icon": "modules/combat-utility-belt/icons/exhaustion4.svg",
+      "referenceId": "@Compendium[dnd5e.rules.apBZudO4UA1wj7aC]",
+      "applyTrigger": "",
+      "removeTrigger": "",
+      "activeEffect": {
+        "label": "Exhaustion 4",
+        "icon": "modules/combat-utility-belt/icons/exhaustion4.svg",
+        "tint": "",
+        "disabled": false,
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "flags": {
+          "ActiveAuras": {
+            "isAura": false,
+            "aura": "None",
+            "radius": null,
+            "alignment": "",
+            "type": "",
+            "ignoreSelf": false,
+            "height": false,
+            "hidden": false,
+            "displayTemp": false,
+            "hostile": false,
+            "onlyOnce": false
+          }
+        },
+        "changes": [
+          {
+            "key": "data.attributes.hp.max",
+            "mode": 1,
+            "value": ".5"
+          }
+        ]
+      },
+      "options": {
+        "overlay": false,
+        "removeOthers": false,
+        "outputChat": true,
+        "markDefeated": false
+      },
+      "isNew": false,
+      "enrichedReference": "<a class=\"entity-link content-link\" draggable=\"true\" data-pack=\"dnd5e.rules\" data-id=\"apBZudO4UA1wj7aC\"><i class=\"fas fa-book-open\"></i> Exhaustion</a>",
+      "isChanged": false
+    },
+    {
+      "id": "9drnjhfr0um1w3qc",
+      "name": "Exhaustion 5",
+      "icon": "modules/combat-utility-belt/icons/exhaustion5.svg",
+      "referenceId": "@Compendium[dnd5e.rules.apBZudO4UA1wj7aC]",
+      "applyTrigger": "",
+      "removeTrigger": "",
+      "activeEffect": {
+        "label": "Exhaustion 5",
+        "icon": "modules/combat-utility-belt/icons/exhaustion5.svg",
+        "tint": "",
+        "disabled": false,
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "flags": {
+          "ActiveAuras": {
+            "isAura": false,
+            "aura": "None",
+            "radius": null,
+            "alignment": "",
+            "type": "",
+            "ignoreSelf": false,
+            "height": false,
+            "hidden": false,
+            "displayTemp": false,
+            "hostile": false,
+            "onlyOnce": false
+          },
+          "combat-utility-belt": {
+            "conditionId": "9drnjhfr0um1w3qc"
+          }
+        },
+        "changes": [
+          {
+            "key": "macro.execute",
+            "mode": 5,
+            "value": "CUBImmobile"
+          }
+        ]
+      },
+      "options": {
+        "overlay": false,
+        "removeOthers": false,
+        "outputChat": true,
+        "markDefeated": false
+      },
+      "isNew": false,
+      "enrichedReference": "<a class=\"entity-link content-link\" draggable=\"true\" data-pack=\"dnd5e.rules\" data-id=\"apBZudO4UA1wj7aC\"><i class=\"fas fa-book-open\"></i> Exhaustion</a>",
+      "isChanged": false
+    },
+    {
+      "id": "102gdmxak55vddo7",
+      "name": "Frightened",
+      "icon": "modules/combat-utility-belt/icons/frightened.svg",
+      "referenceId": "@Compendium[dnd5e.rules.pAcHCDJBhybiVzMF]",
+      "applyTrigger": "",
+      "removeTrigger": "",
+      "options": {
+        "overlay": false,
+        "removeOthers": false,
+        "outputChat": true,
+        "markDefeated": false
+      },
+      "isNew": false,
+      "enrichedReference": "<a class=\"entity-link content-link\" draggable=\"true\" data-pack=\"dnd5e.rules\" data-id=\"pAcHCDJBhybiVzMF\"><i class=\"fas fa-book-open\"></i> Frightened</a>",
+      "isChanged": false
+    },
+    {
+      "id": "4pi8rmzavdljdqg6",
+      "name": "Grappled",
+      "icon": "modules/combat-utility-belt/icons/grappled.svg",
+      "referenceId": "@Compendium[dnd5e.rules.b4UvTt9P3As79cwm]",
+      "applyTrigger": "",
+      "removeTrigger": "",
+      "activeEffect": {
+        "label": "Grappled",
+        "icon": "modules/combat-utility-belt/icons/grappled.svg",
+        "tint": "",
+        "disabled": false,
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "flags": {
+          "ActiveAuras": {
+            "isAura": false,
+            "aura": "None",
+            "radius": null,
+            "alignment": "",
+            "type": "",
+            "ignoreSelf": false,
+            "height": false,
+            "hidden": false,
+            "displayTemp": false,
+            "hostile": false,
+            "onlyOnce": false
+          },
+          "combat-utility-belt": {
+            "conditionId": "4pi8rmzavdljdqg6"
+          }
+        },
+        "changes": [
+          {
+            "key": "macro.execute",
+            "mode": 5,
+            "value": "CUBImmobile"
+          }
+        ]
+      },
+      "options": {
+        "overlay": false,
+        "removeOthers": false,
+        "outputChat": true,
+        "markDefeated": false
+      },
+      "isNew": false,
+      "enrichedReference": "<a class=\"entity-link content-link\" draggable=\"true\" data-pack=\"dnd5e.rules\" data-id=\"b4UvTt9P3As79cwm\"><i class=\"fas fa-book-open\"></i> Grappled</a>",
+      "isChanged": false
+    },
+    {
+      "id": "e77v802grr42oneh",
+      "name": "Incapacitated",
+      "icon": "modules/combat-utility-belt/icons/incapacitated.svg",
+      "referenceId": "@Compendium[dnd5e.rules.tUYvSkhggFcMpVw5]",
+      "applyTrigger": "",
+      "removeTrigger": "",
+      "options": {
+        "overlay": false,
+        "removeOthers": false,
+        "outputChat": true,
+        "markDefeated": false
+      },
+      "isNew": false,
+      "enrichedReference": "<a class=\"entity-link content-link\" draggable=\"true\" data-pack=\"dnd5e.rules\" data-id=\"tUYvSkhggFcMpVw5\"><i class=\"fas fa-book-open\"></i> Incapacitated</a>",
+      "isChanged": false
+    },
+    {
+      "id": "8fria2slkqicra5m",
+      "name": "Invisible",
+      "icon": "modules/combat-utility-belt/icons/invisible.svg",
+      "referenceId": "@Compendium[dnd5e.rules.hMWCeXenROGuhF1K]",
+      "applyTrigger": "",
+      "removeTrigger": "",
+      "activeEffect": {
+        "label": "Invisible",
+        "icon": "modules/combat-utility-belt/icons/invisible.svg",
+        "tint": "",
+        "disabled": false,
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "flags": {
+          "ActiveAuras": {
+            "isAura": false,
+            "aura": "None",
+            "radius": null,
+            "alignment": "",
+            "type": "",
+            "ignoreSelf": false,
+            "height": false,
+            "hidden": false,
+            "displayTemp": false,
+            "hostile": false,
+            "onlyOnce": false
+          },
+          "combat-utility-belt": {
+            "conditionId": "8fria2slkqicra5m"
+          }
+        },
+        "changes": [
+          {
+            "key": "flags.midi-qol.advantage.attack.all",
+            "mode": 2,
+            "value": "1"
+          },
+          {
+            "key": "flags.midi-qol.grants.disadvantage.attack.all",
+            "mode": 5,
+            "value": "1"
+          }
+        ]
+      },
+      "options": {
+        "overlay": false,
+        "removeOthers": false,
+        "outputChat": true,
+        "markDefeated": false
+      },
+      "isNew": false,
+      "enrichedReference": "<a class=\"entity-link content-link\" draggable=\"true\" data-pack=\"dnd5e.rules\" data-id=\"hMWCeXenROGuhF1K\"><i class=\"fas fa-book-open\"></i> Invisible</a>",
+      "isChanged": false
+    },
+    {
+      "id": "blmeahm26ha3pqqp",
+      "name": "Paralyzed",
+      "icon": "modules/combat-utility-belt/icons/paralyzed.svg",
+      "referenceId": "@Compendium[dnd5e.rules.BJaVW22yVYe7dtzq]",
+      "applyTrigger": "",
+      "removeTrigger": "",
+      "activeEffect": {
+        "label": "Paralyzed",
+        "icon": "modules/combat-utility-belt/icons/paralyzed.svg",
+        "tint": "",
+        "disabled": false,
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "flags": {
+          "ActiveAuras": {
+            "isAura": false,
+            "aura": "None",
+            "radius": null,
+            "alignment": "",
+            "type": "",
+            "ignoreSelf": false,
+            "height": false,
+            "hidden": false,
+            "displayTemp": false,
+            "hostile": false,
+            "onlyOnce": false
+          },
+          "combat-utility-belt": {
+            "conditionId": "blmeahm26ha3pqqp"
+          }
+        },
+        "changes": [
+          {
+            "key": "flags.midi-qol.fail.ability.save.dex",
+            "mode": 2,
+            "value": "1"
+          },
+          {
+            "key": "flags.midi-qol.fail.ability.save.str",
+            "mode": 2,
+            "value": "1"
+          },
+          {
+            "key": "flags.midi-qol.grants.advantage.attack.all",
+            "mode": 2,
+            "value": "1"
+          },
+          {
+            "key": "macro.execute",
+            "mode": 5,
+            "value": "CUBIncapacitated"
+          },
+          {
+            "key": "macro.execute",
+            "mode": 5,
+            "value": "CUBImmobile"
+          }
+        ]
+      },
+      "options": {
+        "overlay": false,
+        "removeOthers": false,
+        "outputChat": true,
+        "markDefeated": false
+      },
+      "isNew": false,
+      "enrichedReference": "<a class=\"entity-link content-link\" draggable=\"true\" data-pack=\"dnd5e.rules\" data-id=\"BJaVW22yVYe7dtzq\"><i class=\"fas fa-book-open\"></i> Paralyzed</a>",
+      "isChanged": false
+    },
+    {
+      "id": "7a6s57w6cqbrqcnp",
+      "name": "Petrified",
+      "icon": "modules/combat-utility-belt/icons/petrified.svg",
+      "referenceId": "@Compendium[dnd5e.rules.1XcKtGnKprqX6fa2]",
+      "applyTrigger": "",
+      "removeTrigger": "",
+      "activeEffect": {
+        "label": "Petrified",
+        "icon": "modules/combat-utility-belt/icons/petrified.svg",
+        "tint": "",
+        "disabled": false,
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "flags": {
+          "ActiveAuras": {
+            "isAura": false,
+            "aura": "None",
+            "radius": null,
+            "alignment": "",
+            "type": "",
+            "ignoreSelf": false,
+            "height": false,
+            "hidden": false,
+            "displayTemp": false,
+            "hostile": false,
+            "onlyOnce": false
+          },
+          "combat-utility-belt": {
+            "conditionId": "7a6s57w6cqbrqcnp"
+          }
+        },
+        "changes": [
+          {
+            "key": "flags.midi-qol.grants.advantage.attack.all",
+            "mode": 2,
+            "value": "1"
+          },
+          {
+            "key": "data.traits.dr.all",
+            "mode": 0,
+            "value": "physical"
+          },
+          {
+            "key": "data.traits.dr.all",
+            "mode": 0,
+            "value": "magical"
+          },
+          {
+            "key": "flags.midi-qol.fail.ability.save.dex",
+            "mode": 2,
+            "value": "1"
+          },
+          {
+            "key": "flags.midi-qol.fail.ability.save.str",
+            "mode": 2,
+            "value": "1"
+          },
+          {
+            "key": "macro.execute",
+            "mode": 0,
+            "value": "CUBIncapacitated"
+          },
+          {
+            "key": "macro.execute",
+            "mode": 5,
+            "value": "CUBImmobile"
+          }
+        ]
+      },
+      "options": {
+        "overlay": false,
+        "removeOthers": false,
+        "outputChat": true,
+        "markDefeated": false
+      },
+      "isNew": false,
+      "enrichedReference": "<a class=\"entity-link content-link\" draggable=\"true\" data-pack=\"dnd5e.rules\" data-id=\"1XcKtGnKprqX6fa2\"><i class=\"fas fa-book-open\"></i> Petrified</a>",
+      "isChanged": false
+    },
+    {
+      "id": "upfc9mvce5ijhekk",
+      "name": "Poisoned",
+      "icon": "modules/combat-utility-belt/icons/poisoned.svg",
+      "referenceId": "@Compendium[dnd5e.rules.prcOUhkWEVppFVbg]",
+      "applyTrigger": "",
+      "removeTrigger": "",
+      "activeEffect": {
+        "label": "Poisoned",
+        "icon": "modules/combat-utility-belt/icons/poisoned.svg",
+        "tint": "",
+        "disabled": false,
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "flags": {
+          "ActiveAuras": {
+            "isAura": false,
+            "aura": "None",
+            "radius": null,
+            "alignment": "",
+            "type": "",
+            "ignoreSelf": false,
+            "height": false,
+            "hidden": false,
+            "displayTemp": false,
+            "hostile": false,
+            "onlyOnce": false
+          },
+          "combat-utility-belt": {
+            "conditionId": "upfc9mvce5ijhekk"
+          }
+        },
+        "changes": [
+          {
+            "key": "flags.midi-qol.disadvantage.attack.all",
+            "mode": 5,
+            "value": "1"
+          },
+          {
+            "key": "flags.midi-qol.disadvantage.ability.check.all",
+            "mode": 5,
+            "value": "1"
+          }
+        ]
+      },
+      "options": {
+        "overlay": false,
+        "removeOthers": false,
+        "outputChat": true,
+        "markDefeated": false
+      },
+      "isNew": false,
+      "enrichedReference": "<a class=\"entity-link content-link\" draggable=\"true\" data-pack=\"dnd5e.rules\" data-id=\"prcOUhkWEVppFVbg\"><i class=\"fas fa-book-open\"></i> Poisoned</a>",
+      "isChanged": false
+    },
+    {
+      "id": "5rvnk3fd3494tse1",
+      "name": "Prone",
+      "icon": "modules/combat-utility-belt/icons/prone.svg",
+      "referenceId": "@Compendium[dnd5e.rules.ZkXz0qdkNBkKE6tN]",
+      "applyTrigger": "",
+      "removeTrigger": "",
+      "activeEffect": {
+        "label": "Prone",
+        "icon": "modules/combat-utility-belt/icons/prone.svg",
+        "tint": "",
+        "disabled": false,
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "flags": {
+          "ActiveAuras": {
+            "isAura": false,
+            "aura": "None",
+            "radius": null,
+            "alignment": "",
+            "type": "",
+            "ignoreSelf": false,
+            "height": false,
+            "hidden": false,
+            "displayTemp": false,
+            "hostile": false,
+            "onlyOnce": false
+          }
+        },
+        "changes": [
+          {
+            "key": "flags.midi-qol.disadvantage.attack.all",
+            "mode": 5,
+            "value": "1"
+          }
+        ]
+      },
+      "options": {
+        "overlay": false,
+        "removeOthers": false,
+        "outputChat": true,
+        "markDefeated": false
+      },
+      "isNew": false,
+      "enrichedReference": "<a class=\"entity-link content-link\" draggable=\"true\" data-pack=\"dnd5e.rules\" data-id=\"ZkXz0qdkNBkKE6tN\"><i class=\"fas fa-book-open\"></i> Prone</a>",
+      "isChanged": false
+    },
+    {
+      "id": "s9e7craxtp8lu6hf",
+      "name": "Restrained",
+      "icon": "modules/combat-utility-belt/icons/restrained.svg",
+      "referenceId": "@Compendium[dnd5e.rules.QRKWz3p6v9Rl1Tzh]",
+      "applyTrigger": "",
+      "removeTrigger": "",
+      "activeEffect": {
+        "label": "Restrained",
+        "icon": "modules/combat-utility-belt/icons/restrained.svg",
+        "tint": "",
+        "disabled": false,
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "flags": {
+          "ActiveAuras": {
+            "isAura": false,
+            "aura": "None",
+            "radius": null,
+            "alignment": "",
+            "type": "",
+            "ignoreSelf": false,
+            "height": false,
+            "hidden": false,
+            "displayTemp": false,
+            "hostile": false,
+            "onlyOnce": false
+          },
+          "combat-utility-belt": {
+            "conditionId": "s9e7craxtp8lu6hf"
+          }
+        },
+        "changes": [
+          {
+            "key": "flags.midi-qol.disadvantage.attack.all",
+            "mode": 5,
+            "value": "1"
+          },
+          {
+            "key": "flags.midi-qol.disadvantage.ability.save.dex",
+            "mode": 5,
+            "value": "1"
+          },
+          {
+            "key": "flags.midi-qol.grants.advantage.attack.all",
+            "mode": 5,
+            "value": "1"
+          },
+          {
+            "key": "macro.execute",
+            "mode": 5,
+            "value": "CUBImmobile"
+          }
+        ]
+      },
+      "options": {
+        "overlay": false,
+        "removeOthers": false,
+        "outputChat": true,
+        "markDefeated": false
+      },
+      "isNew": false,
+      "enrichedReference": "<a class=\"entity-link content-link\" draggable=\"true\" data-pack=\"dnd5e.rules\" data-id=\"QRKWz3p6v9Rl1Tzh\"><i class=\"fas fa-book-open\"></i> Restrained</a>",
+      "isChanged": false
+    },
+    {
+      "id": "7vyqu9l794hl4wey",
+      "name": "Stunned",
+      "icon": "modules/combat-utility-belt/icons/stunned.svg",
+      "referenceId": "@Compendium[dnd5e.rules.TiD5vnNql12Wh3Pn]",
+      "applyTrigger": "",
+      "removeTrigger": "",
+      "activeEffect": {
+        "label": "Stunned",
+        "icon": "modules/combat-utility-belt/icons/stunned.svg",
+        "tint": "",
+        "disabled": false,
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "flags": {
+          "ActiveAuras": {
+            "isAura": false,
+            "aura": "None",
+            "radius": null,
+            "alignment": "",
+            "type": "",
+            "ignoreSelf": false,
+            "height": false,
+            "hidden": false,
+            "displayTemp": false,
+            "hostile": false,
+            "onlyOnce": false
+          },
+          "combat-utility-belt": {
+            "conditionId": "7vyqu9l794hl4wey"
+          }
+        },
+        "changes": [
+          {
+            "key": "flags.midi-qol.fail.ability.save.dex",
+            "mode": 2,
+            "value": "1"
+          },
+          {
+            "key": "flags.midi-qol.fail.ability.save.str",
+            "mode": 2,
+            "value": "1"
+          },
+          {
+            "key": "flags.midi-qol.grants.advantage.attack.all",
+            "mode": 2,
+            "value": "1"
+          },
+          {
+            "key": "macro.execute",
+            "mode": 5,
+            "value": "CUBIncapacitated"
+          },
+          {
+            "key": "macro.execute",
+            "mode": 5,
+            "value": "CUBImmobile"
+          }
+        ]
+      },
+      "options": {
+        "overlay": false,
+        "removeOthers": false,
+        "outputChat": true,
+        "markDefeated": false
+      },
+      "isNew": false,
+      "enrichedReference": "<a class=\"entity-link content-link\" draggable=\"true\" data-pack=\"dnd5e.rules\" data-id=\"TiD5vnNql12Wh3Pn\"><i class=\"fas fa-book-open\"></i> Stunned</a>",
+      "isChanged": false
+    },
+    {
+      "id": "mo5bljoh7muxh1s3",
+      "name": "Unconscious",
+      "icon": "icons/svg/unconscious.svg",
+      "referenceId": "@Compendium[dnd5e.rules.MOk1rkF0DeJlcC4l]",
+      "applyTrigger": "",
+      "removeTrigger": "",
+      "activeEffect": {
+        "label": "Unconscious",
+        "icon": "icons/svg/unconscious.svg",
+        "tint": "",
+        "disabled": false,
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "flags": {
+          "ActiveAuras": {
+            "isAura": false,
+            "aura": "None",
+            "radius": null,
+            "alignment": "",
+            "type": "",
+            "ignoreSelf": false,
+            "height": false,
+            "hidden": false,
+            "displayTemp": false,
+            "hostile": false,
+            "onlyOnce": false
+          },
+          "combat-utility-belt": {
+            "conditionId": "mo5bljoh7muxh1s3"
+          }
+        },
+        "changes": [
+          {
+            "key": "macro.execute",
+            "mode": 5,
+            "value": "CUBIncapacitated"
+          },
+          {
+            "key": "macro.execute",
+            "mode": 5,
+            "value": "CUBImmobile"
+          }
+        ]
+      },
+      "options": {
+        "overlay": true,
+        "removeOthers": false,
+        "outputChat": true,
+        "markDefeated": false
+      },
+      "isNew": false,
+      "enrichedReference": "<a class=\"entity-link content-link\" draggable=\"true\" data-pack=\"dnd5e.rules\" data-id=\"MOk1rkF0DeJlcC4l\"><i class=\"fas fa-book-open\"></i> Unconscious</a>",
+      "isChanged": false
+    },
+    {
+      "id": "39289ub2ghl07q1m",
+      "name": "Immobile",
+      "icon": "https://assets.forge-vtt.com/611267b174bf0e671782c6d6/moulinette/images/gameicons/nailed-foot.svg",
+      "referenceId": "",
+      "applyTrigger": "",
+      "removeTrigger": "",
+      "options": {
+        "overlay": false,
+        "removeOthers": false,
+        "outputChat": true,
+        "markDefeated": false
+      },
+      "isNew": false,
+      "enrichedReference": "",
+      "isChanged": false
+    }
+  ]
+}
