@@ -8,7 +8,7 @@
  *   - >x - Any number greater than x
  *   - >=x - Any number greater than or equal to x
  *   - crit-success|crit(ical) - Roll the highest die face
- *   - crit-fail(ure)|fumble - Roll the lowest die face
+ *   - crit(ical)-fail(ure)|fumble - Roll the lowest die face
  * Example input:
  *   >=18 >15 10-14 crit fumble
  *   This will create the following anchors:
