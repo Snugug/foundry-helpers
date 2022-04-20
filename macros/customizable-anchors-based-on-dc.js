@@ -2,7 +2,7 @@
  * Customizable Anchors Based on DC
  * @param {string[]} options - Arguments to the macro to determine anchors. Allowed values are:
  *   - x - A single number
- *   - x-y - A range where the number is greater to or equal to x and less than y
+ *   - x-y - A range where the number is greater to or equal to x and less than or equal to y
  *   - <x - Any number less than x
  *   - <=x - Any number less than or equal to x
  *   - >x - Any number greater than x
@@ -10,11 +10,11 @@
  *   - crit-success|crit(ical) - Roll the highest die face
  *   - crit(ical)-fail(ure)|fumble - Roll the lowest die face
  * Example input:
- *   >=18 >15 10-14 crit fumble
+ *   >=18 >15 10-15 crit fumble
  *   This will create the following anchors:
  *     check >= 18  - All tokens that rolled an 18 or higher
  *     check > 15   - All tokens that rolled higher than a 15
- *     check 10-14  - All tokens that rolled a 10 or higher, but less than 14
+ *     check 10-15  - All tokens that rolled a 10 or higher, but less than or equal to 15
  *     check crit   - All tokens that rolled the highest die face
  *     check fumble - All tokens that rolled the lowest die face
  */
@@ -47,7 +47,7 @@ const goto = options
     } else if (/^\d+-\d+$/.test(opt)) {
       const [min, max] = opt.split('-');
       r.min = parseInt(min);
-      r.max = parseInt(max);
+      r.max = parseInt(max) + 1;
     } else if (/^<\d+$/.test(opt)) {
       r.min = -Infinity;
       r.max = parseInt(opt.slice(1));
