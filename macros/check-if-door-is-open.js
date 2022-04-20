@@ -4,7 +4,7 @@
  * @param {string} anchor - The anchor to goto
  */
 
-const anchor = arguments[0].args[1];
+const anchor = arguments[0].args[1] || 'open';
 const door = canvas.walls.doors.find((d) => d.id === arguments[0].args[0]);
 
 if (door.isOpen) {
