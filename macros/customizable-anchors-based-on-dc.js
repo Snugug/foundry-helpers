@@ -52,7 +52,7 @@ const goto = options
       r.min = -Infinity;
       r.max = parseInt(opt.slice(1));
     } else if (/^>\d+$/.test(opt)) {
-      r.min = parseInt(opt.slice(1));
+      r.min = parseInt(opt.slice(1)) + 1;
       r.max = Infinity;
     } else if (/^<=\d+$/.test(opt)) {
       r.min = -Infinity;
