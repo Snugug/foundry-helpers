@@ -1,0 +1,71 @@
+<form class='_s-view-menu'>
+  <nav class='tabs' data-group='primary-tabs'>
+    <a class='item' data-tab='tab1' data-group='primary-tabs'><i class='fas fa-feather-alt'></i> Edit view</a>
+    <a class='item' data-tab='tab2' data-group='primary-tabs'><i class='fas fa-dice-d20'></i> Play view</a>
+  </nav>
+  <section class='content'>
+    <div class='tab' data-tab='tab1' data-group='primary-tabs'>
+      <ul class='_s-view-menu--list _s-view-menu--parent'>
+        {{#each controls}}
+          <li class='_s-view-menu--list-item _s-view-menu--parent'>
+            <div class='_s-form-group'>
+              <input type="hidden" name="edit-default" value="{{this.selector}}">
+              <input type='checkbox' class='_s-form-group--checkbox' name='edit-controls' value='{{this.selector}}' id='{{this.selector}}' {{#if this.checked.edit}} checked {{/if}} />
+              <label for='{{this.selector}}' class='_s-form-group--label'><i class='{{this.icon}}'></i><span class='_s-form-group--label-text'>{{this.title}}</span></label>
+            </div>
+
+            {{#if this.tools}}
+              <ul class='_s-view-menu--list'>
+                {{#each this.tools}}
+                  <li class='_s-view-menu--list-item'>
+                    <div class='_s-form-group'>
+                      <input type="hidden" name="edit-default" value="{{this.selector}}">
+                      <input type='checkbox' class='_s-form-group--checkbox' name='edit-controls' value='{{this.selector}}' id='{{this.selector}}' {{#if this.checked.edit}} checked {{/if}} />
+                      <label for='{{this.selector}}' class='_s-form-group--label'><i class='{{this.icon}} _s-form-group--label-icon'></i><span class='_s-form-group--label-text'>{{this.title}}</span></label>
+                    </div>
+
+                  </li>
+                {{/each}}
+              </ul>
+            {{/if}}
+          </li>
+        {{/each}}
+      </ul>
+    </div>
+    <div class='tab' data-tab='tab2' data-group='primary-tabs'>
+      <ul class='_s-view-menu--list _s-view-menu--parent'>
+        {{#each controls}}
+          <li class='_s-view-menu--list-item _s-view-menu--parent'>
+            <div class='_s-form-group'>
+              <input type="hidden" name="play-default" value="{{this.selector}}">
+              <input type='checkbox' class='_s-form-group--checkbox' name='play-controls' value='{{this.selector}}' id='{{this.selector}}' {{#if this.checked.play}} checked {{/if}} />
+              <label for='{{this.selector}}' class='_s-form-group--label'><i class='{{this.icon}}'></i><span class='_s-form-group--label-text'>{{this.title}}</span></label>
+            </div>
+
+            {{#if this.tools}}
+              <ul class='_s-view-menu--list'>
+                {{#each this.tools}}
+                  <li class='_s-view-menu--list-item'>
+                    <div class='_s-form-group'>
+                      <input type="hidden" name="play-default" value="{{this.selector}}">
+                      <input type='checkbox' class='_s-form-group--checkbox' name='play-controls' value='{{this.selector}}' id='{{this.selector}}' {{#if this.checked.play}} checked {{/if}} />
+                      <label for='{{this.selector}}' class='_s-form-group--label'><i class='{{this.icon}} _s-form-group--label-icon'></i><span class='_s-form-group--label-text'>{{this.title}}</span></label>
+                    </div>
+
+                  </li>
+                {{/each}}
+              </ul>
+            {{/if}}
+          </li>
+        {{/each}}
+      </ul></div>
+  </section>
+
+  <div class="_s-form-actions">
+    <button name="submit"><i class="far fa-save"></i>Save</button>
+    <button name="reset"><i class="fas fa-undo"></i>Reset Default</button>
+    
+
+  </div>
+  
+</form>

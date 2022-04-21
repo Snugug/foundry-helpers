@@ -3,6 +3,24 @@
   "title": "Snugug's Little Helpers",
   "description": "A collection of tools to help run games more smoothly",
   "author": "Snugug",
+  "authors": [
+    {
+      "name": "Snugug",
+      "discord": "snugug#5543",
+      "twitter": "https://twitter.com/snugug"
+    }
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ],
+  "esmodules": ["js/snugugs-little-helpers.js"],
+  "styles": ["css/snugugs-little-helpers.css"],
   "version": "0.1.0",
-  "minimumCoreVersion": "0.9.0"
+  "minimumCoreVersion": "9",
+  "compatibleCoreVersion": "9",
+  "url": "https://github.com/snugug/foundry-helpers"
 }
