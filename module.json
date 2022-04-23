@@ -27,8 +27,11 @@
     }
   ],
   "esmodules": ["./snugugs-little-helpers.js"],
-  "version": "0.1.0",
+  "version": "0.1.1",
   "minimumCoreVersion": "9",
   "compatibleCoreVersion": "9",
-  "url": "https://github.com/snugug/foundry-helpers"
+  "url": "https://github.com/snugug/foundry-helpers",
+  "download": "https://github.com/snugug/foundry-helpers/releases/latest/download/module.zip",
+  "manifest": "https://github.com/snugug/foundry-helpers/releases/latest/download/module.json",
+  "bugs": "https://github.com/snugug/foundry-helpers/issues"
 }
