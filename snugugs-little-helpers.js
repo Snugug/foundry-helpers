@@ -2,15 +2,15 @@ import { MODULE } from './lib/constants.js';
 import {
   applyCondition,
   conditionRegister,
-  toggleTieredCondition,
-  removeTieredCondition,
-  resetTieredCondition,
-} from './lib/cub/apply-condition.js';
+  toggleStackedCondition,
+  removeStackedCondition,
+  resetStackedConditions,
+} from './lib/cub/stacked-conditions.js';
 
 export class SnugugsLittleHelpers {
   static applyCondition = applyCondition;
-  static removeTieredCondition = removeTieredCondition;
-  static resetTieredCondition = resetTieredCondition;
+  static removeStackedCondition = removeStackedCondition;
+  static resetStackedConditions = resetStackedConditions;
 
   static async init() {
     game.SnugugsLittleHelpers = this;
@@ -43,7 +43,7 @@ Hooks.on('createActiveEffect', (args) => {
     if (isCondition) {
       const condition = args.data.label;
       console.log('Adding ' + condition);
-      toggleTieredCondition(condition, true);
+      toggleStackedCondition(condition, true);
     } else {
       console.log('Not a condition');
     }
@@ -56,7 +56,7 @@ Hooks.on('deleteActiveEffect', (args) => {
   if (isCondition) {
     const condition = args.data.label;
     console.log('Removing ' + condition);
-    toggleTieredCondition(condition, false);
+    toggleStackedCondition(condition, false);
   } else {
     console.log('Not a condition');
   }
