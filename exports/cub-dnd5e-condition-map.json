@@ -400,13 +400,7 @@
             "conditionId": "9drnjhfr0um1w3qc"
           }
         },
-        "changes": [
-          {
-            "key": "macro.execute",
-            "mode": 5,
-            "value": "CUBTieredConditions"
-          }
-        ]
+        "changes": []
       },
       "options": {
         "overlay": false,
@@ -473,13 +467,7 @@
             "conditionId": "4pi8rmzavdljdqg6"
           }
         },
-        "changes": [
-          {
-            "key": "macro.execute",
-            "mode": 5,
-            "value": "CUBTieredConditions"
-          }
-        ]
+        "changes": []
       },
       "options": {
         "overlay": false,
@@ -622,11 +610,6 @@
             "key": "flags.midi-qol.grants.advantage.attack.all",
             "mode": 2,
             "value": "1"
-          },
-          {
-            "key": "macro.execute",
-            "mode": 5,
-            "value": "CUBTieredConditions"
           }
         ]
       },
@@ -703,11 +686,6 @@
             "key": "flags.midi-qol.fail.ability.save.str",
             "mode": 2,
             "value": "1"
-          },
-          {
-            "key": "macro.execute",
-            "mode": 0,
-            "value": "CUBTieredConditions"
           }
         ]
       },
@@ -891,11 +869,6 @@
             "key": "flags.midi-qol.grants.advantage.attack.all",
             "mode": 5,
             "value": "1"
-          },
-          {
-            "key": "macro.execute",
-            "mode": 5,
-            "value": "CUBTieredConditions"
           }
         ]
       },
@@ -962,11 +935,6 @@
             "key": "flags.midi-qol.grants.advantage.attack.all",
             "mode": 2,
             "value": "1"
-          },
-          {
-            "key": "macro.execute",
-            "mode": 5,
-            "value": "CUBTieredConditions"
           }
         ]
       },
@@ -985,8 +953,8 @@
       "name": "Unconscious",
       "icon": "icons/svg/unconscious.svg",
       "referenceId": "@Compendium[dnd5e.rules.MOk1rkF0DeJlcC4l]",
-      "applyTrigger": "u0o3qfau5detrj9b",
-      "removeTrigger": "pvfo1kmmyfr9w2u4",
+      "applyTrigger": "",
+      "removeTrigger": "",
       "activeEffect": {
         "label": "Unconscious",
         "icon": "icons/svg/unconscious.svg",
@@ -1018,13 +986,7 @@
             "conditionId": "mo5bljoh7muxh1s3"
           }
         },
-        "changes": [
-          {
-            "key": "macro.execute",
-            "mode": 5,
-            "value": "CUBTieredConditions"
-          }
-        ]
+        "changes": []
       },
       "options": {
         "overlay": true,
