@@ -13,28 +13,35 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
+      - name: Install JQ
+        run: |
+          sudo apt-get update
+          sudo apt-get install jq
+      - name: Update module.json
+        run: |
+          echo $(cat module.json | jq -r --indent 2 '.download = "https://github.com/Snugug/foundry-helpers/releases/download/${{github.ref_name}}/snugugs-little-helpers-${{github.ref_name}}.zip"') > module.json
       - name: Zip module
         run: |
-          zip -r module . -x .\*
+          zip -r 'snugugs-little-helpers-${{github.ref_name}}.zip' . -x .\*
       - name: Create Release
         id: create_release
         uses: actions/create-release@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
         with:
-          tag_name: ${{ github.ref }}
-          release_name: Release ${{ github.ref }}
+          tag_name: ${{ github.ref_name }}
+          release_name: Release ${{ github.ref_name }}
           draft: false
           prerelease: false
       - name: Upload Module ZIP
-        id: upload-module-zip 
+        id: upload-module-zip
         uses: actions/upload-release-asset@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps 
-          asset_path: ./module.zip
-          asset_name: module.zip
+          upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps
+          asset_path: ./snugugs-little-helpers-${{github.ref_name}}.zip
+          asset_name: snugugs-little-helpers-${{github.ref_name}}.zip
           asset_content_type: application/zip
       - name: Upload Module JSON
         id: upload-module-json
@@ -42,7 +49,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps 
+          upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps
           asset_path: ./module.json
           asset_name: module.json
           asset_content_type: application/json
