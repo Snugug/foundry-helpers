@@ -1,7 +1,7 @@
 {
   "name": "snugugs-little-helpers",
   "title": "Snugug's Little Helpers",
-  "description": "A collection of tools to help run games more smoothly",
+  "description": "A collection of things to help games, especially D&D 5e games, run more smoothly",
   "author": "Snugug",
   "authors": [
     {
@@ -10,15 +10,23 @@
       "twitter": "https://twitter.com/snugug"
     }
   ],
-  "languages": [
+  "packs": [
     {
-      "lang": "en",
-      "name": "English",
-      "path": "lang/en.json"
+      "name": "snugugs-little-macros",
+      "label": "Snugug's Little Macros",
+      "path": "packs/macros.db",
+      "entity": "Macro",
+      "type": "Macro"
+    },
+    {
+      "name": "snugugs-little-journal-entries",
+      "label": "Snugug's Little Journal Entries",
+      "path": "packs/journal-entries.db",
+      "entity": "JournalEntry",
+      "type": "JournalEntry"
     }
   ],
-  "esmodules": ["js/snugugs-little-helpers.js"],
-  "styles": ["css/snugugs-little-helpers.css"],
+  "esmodules": ["./snugugs-little-helpers.js"],
   "version": "0.1.0",
   "minimumCoreVersion": "9",
   "compatibleCoreVersion": "9",

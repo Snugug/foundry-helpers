@@ -202,6 +202,9 @@
             "displayTemp": false,
             "hostile": false,
             "onlyOnce": false
+          },
+          "combat-utility-belt": {
+            "conditionId": "xih3qh94lvi4izmb"
           }
         },
         "changes": [
@@ -336,6 +339,9 @@
             "displayTemp": false,
             "hostile": false,
             "onlyOnce": false
+          },
+          "combat-utility-belt": {
+            "conditionId": "x4sf62161jrqn9i3"
           }
         },
         "changes": [
@@ -398,7 +404,7 @@
           {
             "key": "macro.execute",
             "mode": 5,
-            "value": "CUBImmobile"
+            "value": "CUBTieredConditions"
           }
         ]
       },
@@ -471,7 +477,7 @@
           {
             "key": "macro.execute",
             "mode": 5,
-            "value": "CUBImmobile"
+            "value": "CUBTieredConditions"
           }
         ]
       },
@@ -620,12 +626,7 @@
           {
             "key": "macro.execute",
             "mode": 5,
-            "value": "CUBIncapacitated"
-          },
-          {
-            "key": "macro.execute",
-            "mode": 5,
-            "value": "CUBImmobile"
+            "value": "CUBTieredConditions"
           }
         ]
       },
@@ -706,12 +707,7 @@
           {
             "key": "macro.execute",
             "mode": 0,
-            "value": "CUBIncapacitated"
-          },
-          {
-            "key": "macro.execute",
-            "mode": 5,
-            "value": "CUBImmobile"
+            "value": "CUBTieredConditions"
           }
         ]
       },
@@ -819,6 +815,9 @@
             "displayTemp": false,
             "hostile": false,
             "onlyOnce": false
+          },
+          "combat-utility-belt": {
+            "conditionId": "5rvnk3fd3494tse1"
           }
         },
         "changes": [
@@ -896,7 +895,7 @@
           {
             "key": "macro.execute",
             "mode": 5,
-            "value": "CUBImmobile"
+            "value": "CUBTieredConditions"
           }
         ]
       },
@@ -967,12 +966,7 @@
           {
             "key": "macro.execute",
             "mode": 5,
-            "value": "CUBIncapacitated"
-          },
-          {
-            "key": "macro.execute",
-            "mode": 5,
-            "value": "CUBImmobile"
+            "value": "CUBTieredConditions"
           }
         ]
       },
@@ -991,8 +985,8 @@
       "name": "Unconscious",
       "icon": "icons/svg/unconscious.svg",
       "referenceId": "@Compendium[dnd5e.rules.MOk1rkF0DeJlcC4l]",
-      "applyTrigger": "",
-      "removeTrigger": "",
+      "applyTrigger": "u0o3qfau5detrj9b",
+      "removeTrigger": "pvfo1kmmyfr9w2u4",
       "activeEffect": {
         "label": "Unconscious",
         "icon": "icons/svg/unconscious.svg",
@@ -1028,12 +1022,7 @@
           {
             "key": "macro.execute",
             "mode": 5,
-            "value": "CUBIncapacitated"
-          },
-          {
-            "key": "macro.execute",
-            "mode": 5,
-            "value": "CUBImmobile"
+            "value": "CUBTieredConditions"
           }
         ]
       },
@@ -1050,10 +1039,56 @@
     {
       "id": "39289ub2ghl07q1m",
       "name": "Immobile",
-      "icon": "https://assets.forge-vtt.com/611267b174bf0e671782c6d6/moulinette/images/gameicons/nailed-foot.svg",
-      "referenceId": "",
+      "icon": "modules/snugugs-little-helpers/images/nailed-foot.svg",
+      "referenceId": "@Compendium[snugugs-little-helpers.snugugs-little-journal-entries.N98OiooJ8QYa92Zk]",
       "applyTrigger": "",
       "removeTrigger": "",
+      "activeEffect": {
+        "label": "Immobile",
+        "icon": "https://assets.forge-vtt.com/611267b174bf0e671782c6d6/moulinette/images/gameicons/nailed-foot.svg",
+        "tint": "",
+        "disabled": false,
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "changes": [
+          {
+            "key": "data.attributes.movement.walk",
+            "mode": 5,
+            "value": "0"
+          },
+          {
+            "key": "data.attributes.movement.swim",
+            "mode": 5,
+            "value": "0"
+          },
+          {
+            "key": "data.attributes.movement.fly",
+            "mode": 5,
+            "value": "0"
+          },
+          {
+            "key": "data.attributes.movement.burrow",
+            "mode": 5,
+            "value": "0"
+          },
+          {
+            "key": "data.attributes.movement.climb",
+            "mode": 5,
+            "value": "0"
+          }
+        ],
+        "flags": {
+          "combat-utility-belt": {
+            "conditionId": "39289ub2ghl07q1m"
+          }
+        }
+      },
       "options": {
         "overlay": false,
         "removeOthers": false,
@@ -1061,7 +1096,7 @@
         "markDefeated": false
       },
       "isNew": false,
-      "enrichedReference": "",
+      "enrichedReference": "<a class=\"entity-link content-link\" draggable=\"true\" data-pack=\"snugugs-little-helpers.snugugs-little-journal-entries\" data-id=\"N98OiooJ8QYa92Zk\"><i class=\"fas fa-book-open\"></i> Immobile</a>",
       "isChanged": false
     }
   ]
