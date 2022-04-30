@@ -2,7 +2,6 @@ import { MODULE } from './lib/core/constants.js';
 import { log } from './lib/core/logger.js';
 import {
   applyCondition,
-  conditionRegister,
   toggleStackedCondition,
   removeStackedCondition,
   resetStackedConditions,
@@ -10,7 +9,6 @@ import {
 import {
   setup as setupControlController,
   addToggleClasses as controlControllers,
-  controlController,
   ready as controlControllerReady,
 } from './lib/modules/control-controller/control-display.js';
 
@@ -27,16 +25,6 @@ export class SnugugsLittleHelpers extends MODULE {
   static async ready() {
     // Get registered conditions
     if (game.user.isGM) {
-      const existingConditions = game.user?.getFlag(this.ID, this.FLAGS.CONDITIONS);
-      const existingControlledControls = game.user?.getFlag(this.ID, this.FLAGS.CC);
-
-      if (existingConditions) {
-        conditionRegister.set(existingConditions);
-      }
-      if (existingControlledControls) {
-        controlController.set(existingControlledControls);
-      }
-
       controlControllerReady();
     }
   }
