@@ -35,7 +35,7 @@
   ],
   "esmodules": ["./snugugs-little-helpers.js"],
   "styles": ["css/snugugs-little-helpers.css"],
-  "version": "0.1.0",
+  "version": "0.2.0",
   "minimumCoreVersion": "9",
   "compatibleCoreVersion": "9",
   "url": "https://github.com/snugug/foundry-helpers",
