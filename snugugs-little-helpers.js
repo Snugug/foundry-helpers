@@ -7,6 +7,12 @@ import {
   removeStackedCondition,
   resetStackedConditions,
 } from './lib/modules/cub/stacked-conditions.js';
+import {
+  setup as setupControlController,
+  addToggleClasses as controlControllers,
+  controlController,
+  ready as controlControllerReady,
+} from './lib/modules/control-controller/control-display.js';
 
 export class SnugugsLittleHelpers extends MODULE {
   static applyCondition = applyCondition;
@@ -22,10 +28,16 @@ export class SnugugsLittleHelpers extends MODULE {
     // Get registered conditions
     if (game.user.isGM) {
       const existingConditions = game.user?.getFlag(this.ID, this.FLAGS.CONDITIONS);
+      const existingControlledControls = game.user?.getFlag(this.ID, this.FLAGS.CC);
 
       if (existingConditions) {
         conditionRegister.set(existingConditions);
       }
+      if (existingControlledControls) {
+        controlController.set(existingControlledControls);
+      }
+
+      controlControllerReady();
     }
   }
 }
@@ -40,6 +52,12 @@ Hooks.on('ready', () => {
 
 Hooks.once('devModeReady', ({ registerPackageDebugFlag }) => {
   registerPackageDebugFlag(SnugugsLittleHelpers.ID);
+});
+
+Hooks.on('renderPlayerList', (playerList, html) => setupControlController(html));
+
+Hooks.on('renderSceneControls', (sceneControl, html) => {
+  controlControllers(html);
 });
 
 Hooks.on('createActiveEffect', (args) => {
