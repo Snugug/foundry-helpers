@@ -26,7 +26,15 @@
       "type": "JournalEntry"
     }
   ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ],
   "esmodules": ["./snugugs-little-helpers.js"],
+  "styles": ["css/snugugs-little-helpers.css"],
   "version": "0.1.0",
   "minimumCoreVersion": "9",
   "compatibleCoreVersion": "9",

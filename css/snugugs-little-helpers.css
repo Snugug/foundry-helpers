@@ -1,0 +1,53 @@
+/**********
+ * 
+ * Control Controller
+ *
+ **********/
+
+/**
+  * Toggle toggle
+  */
+.cc--toggle {
+  background: transparent;
+  padding: 0;
+  color: white;
+  line-height: normal;
+  border: 0;
+  align-self: center;
+}
+
+.cc--toggle:hover,
+.cc--toggle:focus {
+  box-shadow: none;
+  text-shadow: 0 0 5px red;
+}
+
+.cc--toggle__icon {
+  margin-right: 0;
+}
+
+.cc--toggle__editing .fas span {
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  color: transparent;
+  margin-left: -1px;
+  display: inline-block;
+}
+
+/**
+  * View toggle
+  */
+.cc--view-mode\:edit .cc--edit-hidden {
+  display: none !important;
+}
+
+.cc--view-mode\:play .cc--play-hidden {
+  display: none !important;
+}
+
+.cc--view-mode\:select .cc--selected {
+  background-color: black !important;
+  color: white !important;
+  border-color: red !important;
+}
