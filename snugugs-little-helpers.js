@@ -1,12 +1,12 @@
-import { MODULE } from './lib/constants.js';
-import { log } from './lib/logger.js';
+import { MODULE } from './lib/core/constants.js';
+import { log } from './lib/core/logger.js';
 import {
   applyCondition,
   conditionRegister,
   toggleStackedCondition,
   removeStackedCondition,
   resetStackedConditions,
-} from './lib/cub/stacked-conditions.js';
+} from './lib/modules/cub/stacked-conditions.js';
 
 export class SnugugsLittleHelpers extends MODULE {
   static applyCondition = applyCondition;
