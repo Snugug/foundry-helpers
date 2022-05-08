@@ -11,12 +11,35 @@ import {
   addToggleClasses as controlControllers,
   ready as controlControllerReady,
 } from './lib/modules/control-controller/control-display.js';
+import { SpellSchoolDialog } from './lib/modules/ase/setup-detect-magic.js';
 
 export class SnugugsLittleHelpers extends MODULE {
   static applyCondition = applyCondition;
   static removeStackedCondition = removeStackedCondition;
   static resetStackedConditions = resetStackedConditions;
   static log = log;
+
+  static api = {
+    spellSchoolDialog: new SpellSchoolDialog(),
+    getTiles() {
+      const layer = canvas.activeLayer;
+      function getChildren(child, i = []) {
+        if (child.children && child.children.length > 0) {
+          for (const c of child.children) {
+            const baby = getChildren(c, i);
+            i.push(c);
+            i = i.concat(baby);
+          }
+        } else {
+          return child;
+        }
+
+        return i;
+      }
+      const tiles = getChildren(layer).filter((c) => c.constructor.name === 'Tile');
+      return tiles;
+    },
+  };
 
   static async init() {
     game.SnugugsLittleHelpers = this;
