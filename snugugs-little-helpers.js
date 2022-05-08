@@ -73,3 +73,49 @@ Hooks.on('deleteActiveEffect', (args) => {
     SnugugsLittleHelpers.log.info('Not a condition');
   }
 });
+
+// Add ASE Detection tags to tokens when they're created
+Hooks.on('createToken', (token) => {
+  if (Tagger) {
+    const evil = ['Aberration', 'Fiend', 'Undead'];
+    const good = ['Celestial', 'Elemental', 'Fey'];
+    const all = good.concat(evil).flat();
+
+    let type = token?.data?.document?._actor?.labels?.creatureType;
+
+    let found = false;
+    if (!all.includes(type)) {
+      for (const g of good) {
+        if (type.includes(g)) {
+          type = g;
+          found = true;
+          break;
+        }
+      }
+      if (!found) {
+        for (const e of evil) {
+          if (type.includes(e)) {
+            type = e;
+            found = true;
+            break;
+          }
+        }
+      }
+    }
+
+    if (all.includes(type)) {
+      const alignment =
+        token?.data?.document?._actor?.data?.data?.details?.alignment?.toLowerCase();
+
+      if (alignment.includes('evil')) {
+        Tagger.addTags(token, ['ase-detect', 'evil']);
+      } else if (alignment.includes('good')) {
+        Tagger.addTags(token, ['ase-detect', 'good']);
+      } else if (evil.includes(type)) {
+        Tagger.addTags(token, ['ase-detect', 'evil']);
+      } else if (good.includes(type)) {
+        Tagger.addTags(token, ['ase-detect', 'good']);
+      }
+    }
+  }
+});
